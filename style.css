@@ -190,3 +190,7 @@
 #main-content {
 	border: 1px solid;
 }
+
+#about-form {
+	line-height: 24px;
+}
