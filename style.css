@@ -1,3 +1,6 @@
+.row {
+	z-index: -1;
+}
 /* Nav Content CSS */
 
 .nav-top {
@@ -52,56 +55,63 @@
 
 }
 
-/* Main Content CSS */
+
+
+
+/* Profile Header Content CSS */
 
  #jumbotron-img {
- 	position: relative;
- 	margin-top: -1.8%;
- 	height: 400px;
- 	width: 100%;
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    top: -22px;
+    right: 0px;
+    left: 0px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
  }
 
  #pictures {
- 	position: static;
  }
 
  #user-img {
- 	position: relative;
- 	margin-left: 15px;
- 	margin-top: -18%;
- 	height: 250px;
- 	width: 180px;
- 	border: 1px solid;
- 	z-index: 0;
+    position: relative;
+    box-shadow: 0 1px 12px rgba(0,0,0,0.1);
+    height: 225px;
+    background-color: #fff;
  }
 #content-menu{
-	width:50%;
+	z-index: 1;
+	width: 80%;
 }
 
 #edit-profile {
-	position: relative;
-	margin-left: 75%;
-	z-index: 1;
+	font-size: 16px;
 }
 
  #content-nav {
- 	position: relative;
- 	margin-top: -3.3%;
- 	margin-left: 16.69%;
- 	margin-right: -80.31%;
- 	width: 100%;
+
  }
 
  #top-content {
+ 	width: 100%;
  	border: 1px solid;
  }
 
- .nav-justified > li > a {
+.nav-justified {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.nav-justified > li > a {
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 0;
   font-weight: bold;
-  color: #000;
+  color: #777;
   text-align: center;
   background-color: #e5e5e5; /* Old browsers */
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e5e5e5));
@@ -112,7 +122,6 @@
   background-repeat: repeat-x; /* Repeat the gradient */
   border-bottom: 1px solid #d5d5d5;
 }
-
 .nav-justified > .active > a,
 .nav-justified > .active > a:hover,
 .nav-justified > .active > a:focus {
@@ -127,4 +136,57 @@
 .nav-justified > li:last-child > a {
   border-bottom: 0;
   border-radius: 0 0 5px 5px;
+}
+
+@media (min-width: 768px) {
+  .nav-justified {
+    max-height: 52px;
+  }
+  .nav-justified > li > a {
+    border-right: 1px solid #d5d5d5;
+    border-left: 1px solid #fff;
+  }
+  .nav-justified > li:first-child > a {
+    border-left: 0;
+    border-radius: 5px 0 0 5px;
+  }
+  .nav-justified > li:last-child > a {
+    border-right: 0;
+    border-radius: 0 5px 5px 0;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .masthead,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+
+
+
+
+
+/* Main Content CSS */
+
+#main-header {
+	background-color: #e5e5e5;
+	border: 1px solid;
+	height: 75px;
+}
+
+#about-heading {
+
+	margin-left: 45%;
+	width: 10%;
+	font-family: arial;
+}
+
+#main-content {
+	border: 1px solid;
 }
