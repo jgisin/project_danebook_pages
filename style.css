@@ -1,6 +1,4 @@
-.row {
-	z-index: -1;
-}
+
 /* Nav Content CSS */
 
 .nav-top {
@@ -54,6 +52,10 @@
 	color: #000;
 
 }
+
+
+
+
 
 
 
@@ -172,12 +174,15 @@
 
 
 
+
+
 /* About/Edit-Profile Content CSS */
 
 #main-header {
 	background-color: #e5e5e5;
 	border: 1px solid;
 	height: 50px;
+	width: 100%;
 	padding-bottom: 0px;
 }
 
@@ -198,6 +203,12 @@
 	line-height: 24px;
 }
 
+
+
+
+
+
+
 /* Friend Content CSS */
 
 #friend {
@@ -217,4 +228,45 @@
 
 #friend-name {
 	font-size: 18px;
+}
+
+
+
+
+
+
+/* Photo Content CSS */
+
+#photo {
+  padding-top: 20px;
+}
+
+#photo-content{
+  margin-top: -15px;
+  border: 1px solid;
+
+}
+
+#photo-img {
+
+opacity: 1;
+}
+
+#photo-overlay {
+  position: relative;
+  opacity: 0;
+  width:230px;
+  color: #fff;
+}
+
+#photo:hover #photo-overlay {
+  background-color: #000;
+  opacity: 0.5;
+
+}
+
+#photo:hover #photo-img {
+  background-color: #000;
+  opacity: 0.5;
+
 }
