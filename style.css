@@ -172,25 +172,49 @@
 
 
 
-/* Main Content CSS */
+/* About/Edit-Profile Content CSS */
 
 #main-header {
 	background-color: #e5e5e5;
 	border: 1px solid;
-	height: 75px;
+	height: 50px;
+	padding-bottom: 0px;
 }
 
 #about-heading {
-
+	margin-top: -10px;
 	margin-left: 45%;
 	width: 10%;
 	font-family: arial;
 }
 
 #main-content {
+	margin-top: -15px;
 	border: 1px solid;
+	height: 500px;
 }
 
 #about-form {
 	line-height: 24px;
+}
+
+/* Friend Content CSS */
+
+#friend {
+	margin: 4px 5px 4px 5px;
+	border: 1px solid;
+}
+
+#friend-img {
+	margin: 5px 5px 5px 0px;
+	height: 100px;
+	width: 100px;
+}
+
+#friend-amount {
+	color:#777;
+}
+
+#friend-name {
+	font-size: 18px;
 }
